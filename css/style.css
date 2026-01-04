@@ -55,6 +55,28 @@
 .btn-outline-primary:hover {
     color: var(--bs-light);
 }
+.gallery-title{
+    text-align: center;
+    font-size:40px;
+    
+
+}
+.gallery-container{
+    display:flex;
+    justify-content: center;
+}
+.gallery-grid img{
+    display: grid;
+    grid-template-columns: (3,1fr);
+    grid-auto-rows: auto;
+    gap:20px;
+    max-width: auto;
+    width:100%;
+    margin:auto;
+}
+.gallery-section{
+    padding: 20px 20px;
+}
 
 .btn-secondary,
 .btn-outline-secondary:hover {
@@ -297,6 +319,13 @@
 .feature {
     background: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(0, 0, 0, 1) 50%), url(../img/carousel-1.jpg) left center no-repeat;
     background-size: cover;
+}
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* forces equal boxes */
+  object-fit: cover;
+  display: block;
+  
 }
 
 .feature-row {
